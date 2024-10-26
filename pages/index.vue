@@ -311,6 +311,20 @@ const swiperOptions1 = {
   pagination: {
     clickable: true,
   },
+  breakpoints: {
+    // When the window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // When the window width is >= 640px
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 200,
+    },
+    // When the window width is >= 1024px
+ 
+  },
 };
 </script>
 <style scoped>
