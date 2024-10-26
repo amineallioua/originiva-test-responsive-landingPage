@@ -6,7 +6,7 @@
             <h1 class=" text-[35px] lg:text-[50px]  lg:text-[#A06056] mb-10 text-white font-[400] font-merriweather " >Elegance for Interiors & Exteriors</h1>
             <p class="  text-[18px] lg:text-[22px] font-[400] lg:text-[#706458E5] text-white mb-10 font-Varta " >We provide everyone with modern, 
                 trendy, quality furniture</p>
-            <button class=" border-2 text-[20px] font-[700] text-white lg:text-[#A06056] lg:border-[#A06056] border-white  rounded-[50%] mt-5 h-[50px] w-[50px]  " >
+            <button @click="scroll" class=" border-2 text-[20px] font-[700] text-white lg:text-[#A06056] lg:border-[#A06056] border-white  rounded-[50%] mt-5 h-[50px] w-[50px]  " >
             >
             </button>
             </div>
@@ -234,6 +234,22 @@ const totalSlides = ref(0); // Total number of slides
 const mySwiper1 = ref(null);
 const currentPage1 = ref(0); // Track current slide index
 const totalSlides1 = ref(0); // Total number of slides
+const scroll = ()=>{
+  let scrollvalu
+  if( window.innerWidth > 600 || window.innerWidth < 1000  ){
+    scrollvalu=550
+  }
+  if(window.innerWidth > 1000 ){
+    scrollvalu=900
+  }
+  if( window.innerWidth < 600 ) {
+    scrollvalu=730
+  }
+  window.scrollBy({
+      top: scrollvalu,
+      behavior: 'smooth',
+    });
+}
 
 const onSwiperInit = (swiperInstance) => {
   mySwiper.value = swiperInstance;

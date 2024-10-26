@@ -13,7 +13,7 @@
             </div>  
 
 
-            <button @click="togglesidebar" :class="[ 'lg:hidden border-2 absolute text-[20px] font-[700] text-white  border-white   rounded-[50%]  h-[50px] w-[50px] right-10'  ,isopen ? 'hidden' : 'block' ]" > - </button>
+            <button @click="togglesidebar" :class="[ 'lg:hidden border-2 absolute text-[20px] font-[700] text-white  border-white   rounded-[50%]  h-[50px] w-[50px] right-10 transition-all duration-500 ease-in-out '  ,isopen ? 'hidden' : 'block' ]" > - </button>
 
        
             <nuxt-img 
@@ -29,11 +29,11 @@
             
         </div>
         <div  :class="[
-    ' md:w-[40%] h-full w-[70%]  fixed top-0 b right-0 z-50 bg-[#A06056] opacity-80 flex overflow-hidden justify-between px-10 pt-10 transition-all duration-500 ease-in-out',
+    ' md:w-[40%] h-full w-[70%]  fixed top-0 b right-0 z-50 bg-[#A06056] opacity-80  overflow-hidden justify-between px-10 pt-10 transition-all duration-500 ease-in-out',
     isopen ? 'right-0' : 'md:right-[-40%] right-[-70%] '
   ]" >
-            <button @click="togglesidebar" class="  border-2 text-[20px] font-[700] text-white  border-white   rounded-[50%]  h-[50px] w-[50px] right-10 " > > </button>
-            <ul class="  relative right-0 ml-5  text-[25px] text-white  " >
+            <button @click="togglesidebar" class=" right-10 top-5 absolute border-2 text-[20px] font-[700] text-white  border-white   rounded-[50%]  h-[50px] w-[50px]  " > > </button>
+            <ul class="  relative right-0 ml-5 mt-[100px] text-[25px] text-white  " >
                 <li  class=" mb-10  "  >Products</li>
                 <li class=" mb-10  ">Rooms</li>
                 <li class=" mb-10  ">Services</li>
