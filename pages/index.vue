@@ -18,7 +18,7 @@
 
 
 
-    <section class="  w-full p-10 lg:px-16 pt-10 bg-[#F3EEE8] " >
+    <section class="  w-full p-10 lg:px-16 pt-10 bg-[#F3EEE8] px-5 " >
         <h1 class=" text-[35px] lg:text-[55px] text-[#706458] mb-10 font-merriweather " > find your room </h1>
         <div class=" lg:flex  " >
             <p class="text[18px] font-[400] text-[#706458E5] mr-10 mb-10 font-Varta   "     >Dining room, bedroom, bathroom or office. Find what you need</p>
@@ -291,7 +291,7 @@ const swiperOptions = {
   },
   breakpoints: {
     // When the window width is >= 320px
-    320: {
+    0: {
       slidesPerView: 1,
       spaceBetween: 10,
     },
@@ -313,7 +313,7 @@ const swiperOptions1 = {
   },
   breakpoints: {
     // When the window width is >= 320px
-    320: {
+    0: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
