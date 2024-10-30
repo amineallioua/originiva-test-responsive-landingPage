@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
@@ -11,4 +10,7 @@ export default defineNuxtConfig({
     // The default is 'static', you can also set other providers here if needed
     dir: 'assets/images'
   },
+  css: [
+    '@fortawesome/fontawesome-free/css/all.css'
+  ]
 })
