@@ -28,12 +28,14 @@
       </div>
     </div>
     <div
-      class="absolute xl:relative xl:w-1/2 w-full h-screen overflow-hidden bg-red-500"
+      class="absolute xl:relative xl:w-1/2 w-full h-screen overflow-hidden"
     >
       <div class="xl:hidden absolute inset-0 bg-black opacity-50"></div>
       <nuxt-img
         class="w-full h-full object-cover"
+        aspect-ratio="16/9" 
         src="background.jpeg"
+        :placeholder="500"
       ></nuxt-img>
     </div>
   </section>
@@ -55,11 +57,11 @@
       <swiper
         :breakpoints="swiperOptions.breakpoints"
         @swiper="onSwiperInit"
-        @slide-change="onSlideChange"
+        @slideChange="onSlideChange"
         v-bind="swiperOptions"
         class="lg:w-auto"
       >
-        <swiper-slide v-for="room in rooms" :room.id>
+        <swiper-slide v-for="room in rooms" :key="room.id">
           <card :name="room.name" , :image="room.image" />
         </swiper-slide>
       </swiper>
@@ -72,7 +74,7 @@
         Next <i class="fa-solid fa-chevron-right"></i>
       </button>
       <p class="text-[#706458E5] text-[18px] font-[400]">
-        {{ currentPage + 1 }} / {{ totalSlides }}
+        {{ currentPage + 1  }} / {{ totalSlides }}
       </p>
       <button
         class="md:ml-[280px] hidden md:block ml-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
@@ -204,7 +206,7 @@
     <div
       class="w-full xl:mt-5 lg:mt-[180px] my-5 lg:block hidden overflow-hidden"
     >
-      <swiper @swiper="onSwiperInit1" class="w-full" v-bind="swiperOptions1">
+      <swiper @swiper="onSwiperInit1" @slideChange="onSlideChange1" class="w-full" v-bind="swiperOptions1">
         <swiper-slide v-for="object in objects" :key="object.id">
           <photos :name="object.name" :image="object.image" />
         </swiper-slide>
@@ -371,10 +373,26 @@ const rooms = [
   },
   {
     id: 3,
-    name: "bedroom",
+    name: "bedroom 1",
     image: "Background.png"
-  }
+  },
+  {
+    id: 4,
+    name: "bedroom 2",
+    image: "Background.png"
+  },
+  {
+    id: 5,
+    name: "bedroom 3",
+    image: "Background.png"
+  },
+  {
+    id: 6,
+    name: "bedroom 4",
+    image: "Background.png"
+  },
 ];
+
 const objects = [
   {
     id: 1,
@@ -406,61 +424,54 @@ const onSwiperInit1 = (swiperInstance) => {
   mySwiper1.value = swiperInstance;
   totalSlides1.value = swiperInstance.slides.length;
 };
-
-const goNext = () => {
+const onSlideChange = () => {
   if (mySwiper.value) {
-    mySwiper.value.slideNext();
-    console.log(mySwiper.value);
-    // Access slideNext() directly on the Swiper instance
+    currentPage.value = mySwiper.value.realIndex;
+    console.log('Current page:', mySwiper.value.realIndex + 1);
   }
-  const onSlideChange = () => {
-    currentPage.value = mySwiper.value.activeIndex;
-    console.log("jhnkjh");
-  };
 };
+const onSlideChange1 = () => {
+  if (mySwiper1.value) {
+    currentPage1.value = mySwiper1.value.realIndex;
+    console.log('Current page:', mySwiper1.value.realIndex + 1);
+  }
+};
+
+  const  goNext =()=>{
+    if (mySwiper.value) {
+      mySwiper.value.slideNext();}
+  }
+
 const goNext1 = () => {
   if (mySwiper1.value) {
     mySwiper1.value.slideNext();
-    if (currentPage1.value == totalSlides1.value - 1) {
-      currentPage1.value = 0;
-      console.log("hgbhjbjbh");
-      return;
-    }
-    currentPage1.value++;
-    // Access slideNext() directly on the Swiper instance
   }
 };
 const goprev1 = () => {
   if (mySwiper1.value) {
     mySwiper1.value.slidePrev();
-    if (currentPage1.value == 0) {
-      currentPage1.value = totalSlides1.value - 1;
-      console.log("hgbhjbjbh");
-      return;
-    }
-    currentPage1.value--;
-    // Access slideNext() directly on the Swiper instance
   }
 };
 
 const swiperOptions = {
-  loop: true,
+  loop: true,  // Change this to false for testing
   slidesPerView: "auto",
   spaceBetween: 30,
   pagination: {
-    clickable: true
+    clickable: true,
   },
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     770: {
       slidesPerView: "auto",
-      spaceBetween: 30
-    }
-  }
+      spaceBetween: 30,
+    },
+  },
 };
+
 const swiperOptions1 = {
   spaceBetween: 0,
   slidesPerView: "auto",
