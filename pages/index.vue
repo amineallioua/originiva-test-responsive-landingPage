@@ -2,7 +2,7 @@
   <section class="h-screen relative w-full flex items-center bg-[#F3EEE8]">
     <div class="xl:w-1/2 xl:pl-[150px] w-full h-screen xl:h-[50vh] z-20">
       <div
-        class="md:w-[700px] xl:w-[410px] mx-5 lg:mx-[15%] md:mx-14 mt-[60%] md:mt-[45%] xl:m-0 xl:text-left text-center"
+        class="md:w-[700px]  xl:w-[410px] mx-5 lg:mx-[15%] md:mx-14 mt-[250px] md:mt-[25%] lg:mt-[20%]  xl:m-0 xl:text-left text-center"
       >
         <p
           class="text-[14px] tracking-wider xl:text-[#A06056] text-white font-[700] mb-[50px] font-varta"
@@ -10,12 +10,12 @@
           HOME DESIGN
         </p>
         <h1
-          class="xl:text-[50px] tracking-wide text-[35px] md:text-[50px] lg:text-[70px] xl:text-[#A06056] mb-8 text-white font-[400] font-merriweather"
+          class="xl:text-[50px] tracking-wide text-[35px] md:text-[50px]  xl:text-[#A06056] mb-8 text-white font-[400] font-merriweather"
         >
           Elegance for Interiors & Exteriors
         </h1>
         <p
-          class="text-[18px] lg:text-[30px] xl:text-[22px] font-[400] xl:text-[#706458E5] text-white mb-8 font-varta"
+          class="text-[18px]  xl:text-[22px] font-[400] xl:text-[#706458E5] text-white mb-8 font-varta"
         >
           We provide everyone with modern, trendy, quality furniture
         </p>
@@ -331,7 +331,7 @@
       class="lg:flex justify-between mt-10 md:mt-[20px] text-[#706458B2] font-varta"
     >
       <span class="lg:block hidden"> © 2021 Agence Dnd </span>
-      <div class="lg:flex gap-3 grid grid-cols-2">
+      <div class="md:flex lg:justify-normal md:justify-between gap-3 grid grid-cols-2">
         <p>Privacy policy</p>
         <p>Term of service</p>
         <p>Language</p>
