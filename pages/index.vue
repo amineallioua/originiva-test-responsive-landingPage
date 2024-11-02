@@ -100,9 +100,9 @@
         Find out more <i class="fa-solid fa-chevron-right"></i>
       </p>
     </div>
-    <div class="md:grid md:grid-cols-2 md:mt-0 mt-[41px] md:grid-rows-auto">
+    <div class="md:grid md:grid-cols-2 gap-7  h-auto md:mt-0 mt-[41px] md:grid-rows-auto">
       <div
-        class="lg:m-auto md:mb-0 mb-[40px] md:p-2 md:h-[229px] lg:p-[15px] max-w-[290px]"
+        class="lg:m-auto md:mb-0 mb-[40px] md:p-[1px] md:h-auto lg:p-[1px] max-w-[290px]"
       >
         <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta">
           Our Advices
@@ -114,7 +114,7 @@
         </p>
       </div>
       <div
-        class="lg:m-auto md:mb-0 mb-[40px] md:p-2 md:h-[229px] lg:p-[15px] max-w-[290px]"
+        class="lg:m-auto md:mb-0 mb-[40px] md:p-[1px] md:h-[213.5px] lg:p-[1px] max-w-[290px]"
       >
         <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta">
           Click and Collect
@@ -125,7 +125,7 @@
         </p>
       </div>
       <div
-        class="lg:m-auto md:mb-0 mb-[40px] md:p-2 h-auto lg:p-[15px] max-w-[290px]"
+        class="lg:m-auto md:mb-0 mb-[40px] md:p-[1px] h-auto lg:p-[1px] max-w-[290px]"
       >
         <h3 class="text-[25px] font-[600] mb-[12px] font-varta text-[#A06056]">
           Conception Service
@@ -135,7 +135,7 @@
           exterior decoration or layout projects.
         </p>
       </div>
-      <div class="lg:m-auto md:mb-0 md:p-2 h-auto lg:p-[15px] max-w-[290px]">
+      <div class="lg:m-auto md:mb-0 md:p-[1px] h-auto lg:p-[1px] max-w-[290px]">
         <h3 class="text-[25px] mb-[12px] font-[600] text-[#A06056] font-varta">
           Installation Service
         </h3>
@@ -150,7 +150,7 @@
   <section
     class="w-full  overflow-hidden lg:pl-[60px] xl:pl-[150px] py-[48px] md:py-[70px]"
   >
-    <div class="xl:flex mb-[64px] px-8 md:px-14 justify-between lg:h-[130px] lg:pr-[150px]">
+    <div class="xl:flex mb-[64px] px-8 md:px-14 lg:pl-0 justify-between lg:h-[130px] lg:pr-[150px]">
       <div class="w-auto h-auto">
         <h2
           class="text-[35px] font-[400] text-[#121212] mb-[15px] font-merriweather"
@@ -253,7 +253,7 @@
   </section>
 
   <section
-    class="w-full bg-[#F3EEE8] overflow-hidden relative px-8 md:px-10 xl:px-[150px] lg:px-[60px] pt-[48px] md:pt-[70px] pb-[64px]"
+    class="w-full bg-[#F3EEE8] overflow-hidden relative px-8  md:pl-[56px] xl:px-[150px] lg:px-[60px] pt-[48px] md:pt-[70px] pb-[64px]"
   >
     <div
       class="lg:flex md:grid-cols-4 md:grid justify-between gap-[48px]"
@@ -265,7 +265,7 @@
         antic
       </h2>
 
-      <div class="mb-10 mt-5 lg:h-[187px] lg:mt-0 font-varta">
+      <div class="mb-10 mt-5 lg:h-[187px] md:mt-0 font-varta">
         <h3>Products</h3>
         <p>Furniture</p>
         <p>Decoration</p>
@@ -505,5 +505,6 @@ input::placeholder {
   font-size: 18px;
   font-weight:400;
   font-family: 'Varta', sans-serif;
+  opacity:90%;
 }
 </style>

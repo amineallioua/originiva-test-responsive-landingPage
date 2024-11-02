@@ -2,7 +2,7 @@
     <div
       class="lg:w-[458px] overfloww-hidden lg:h-[550px] md:w-[308px] md:h-[400px] w-[145px] lg:m-0 mb-10 ml-5 h-[175px]"
     >
-      <nuxt-img :src="image"  :placeholder="500"   aspect-ratio="16/9"  class="w-full object-cover h-full"></nuxt-img>
+      <nuxt-img :src="image"  :placeholder="500"   aspect-w-3 aspect-h-2  class="w-full object-cover h-full"></nuxt-img>
   
       <h1 class="mt-2 text-[15px] font-[400] text-[#121212]">{{ name }}</h1>
     </div>
