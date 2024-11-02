@@ -33,7 +33,6 @@
       <div class="xl:hidden absolute inset-0 bg-black opacity-50"></div>
       <nuxt-img
         class="w-full h-full object-cover"
-        aspect-ratio="16/9" 
         src="background.jpeg"
         :placeholder="500"
       ></nuxt-img>
