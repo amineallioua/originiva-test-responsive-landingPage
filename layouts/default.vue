@@ -5,7 +5,7 @@
       >
         <div class="flex items-center lg:mt-2 md:pl-16 pl-8 xl:pl-[150px]">
           <span
-            class="text-[34px] p-0 text-white lg:text-[#A06056] font-bold font-merriweather"
+            class="text-[34px] tracking-wider p-0 text-white lg:text-[#A06056] font-bold font-merriweather"
             >antic
           </span>
           <ul
@@ -42,7 +42,7 @@
       >
         <button
           @click="togglesidebar"
-          class="right-10 top-5 absolute text-[0px] font-[700] text-white rounded-[50%] h-[50px] w-[50px]"
+          class="right-10 top-12 absolute text-[30px] font-[700] text-white rounded-[50%] h-[50px] w-[50px]"
         >
           <i class="fas fa-bars icon"></i>
         </button>

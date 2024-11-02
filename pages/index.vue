@@ -5,12 +5,12 @@
         class="md:w-[700px] xl:w-[410px] mx-5 lg:mx-[15%] md:mx-14 mt-[60%] md:mt-[45%] xl:m-0 xl:text-left text-center"
       >
         <p
-          class="text-[14px] md:text-[20px] xl:text-[#A06056] text-white font-[700] mb-[50px] font-varta"
+          class="text-[14px] tracking-wider xl:text-[#A06056] text-white font-[700] mb-[50px] font-varta"
         >
           HOME DESIGN
         </p>
         <h1
-          class="xl:text-[50px] text-[35px] md:text-[50px] lg:text-[70px] xl:text-[#A06056] mb-8 text-white font-[400] font-merriweather"
+          class="xl:text-[50px] tracking-wide text-[35px] md:text-[50px] lg:text-[70px] xl:text-[#A06056] mb-8 text-white font-[400] font-merriweather"
         >
           Elegance for Interiors & Exteriors
         </h1>
@@ -107,7 +107,7 @@
         <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta">
           Our Advices
         </h3>
-        <p class="text-[18px] font-[400] font-varta">
+        <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
           What if you took advantage of this rather special period to rethink
           your interior? You spend more time at home so you might as well feel
           good there.
@@ -119,7 +119,7 @@
         <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta">
           Click and Collect
         </h3>
-        <p class="text-[18px] font-[400] font-varta">
+        <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
           Adapted and contactless. Free from € 200 of purchases in stores
           offering the service.
         </p>
@@ -130,7 +130,7 @@
         <h3 class="text-[25px] font-[600] mb-[12px] font-varta text-[#A06056]">
           Conception Service
         </h3>
-        <p class="text-[18px] font-[400] font-varta">
+        <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
           Personalized service with an expert advisor for your interior and
           exterior decoration or layout projects.
         </p>
@@ -139,7 +139,7 @@
         <h3 class="text-[25px] mb-[12px] font-[600] text-[#A06056] font-varta">
           Installation Service
         </h3>
-        <p class="text-[18px] font-[400] font-varta">
+        <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
           Our furniture packaged in flat packs are designed for easy assembly.
           But you can call on our partner.
         </p>
@@ -148,9 +148,9 @@
   </section>
 
   <section
-    class="w-full px-8 md:px-14 overflow-hidden lg:pl-[60px] xl:pl-[150px] py-[48px] md:py-[70px]"
+    class="w-full  overflow-hidden lg:pl-[60px] xl:pl-[150px] py-[48px] md:py-[70px]"
   >
-    <div class="xl:flex mb-[64px] justify-between lg:h-[130px] lg:pr-[150px]">
+    <div class="xl:flex mb-[64px] px-8 md:px-14 justify-between lg:h-[130px] lg:pr-[150px]">
       <div class="w-auto h-auto">
         <h2
           class="text-[35px] font-[400] text-[#121212] mb-[15px] font-merriweather"
@@ -173,7 +173,7 @@
           class="px-4 py-2 w-full xl:w-[300px] h-[50px] text-[#706458E5] text-[18px] font-[400] bg-[#F3EEE84D]"
         />
         <button
-          class="bg-[#534B42] xl:mt-0 mt-4 xl:ml-[16px] text-[17px] font-[700] h-[50px] w-[290px] md:w-full xl:w-[143px] text-white px-4 py-2"
+          class="bg-[#534B42] xl:mt-0 mt-4 xl:ml-[16px] text-[17px] font-[700] h-[50px] w-[290px] md:w-full xl:w-[143px] font-karla tracking-wider  text-white px-4 py-2"
         >
           Subscribe
         </button>
@@ -181,13 +181,13 @@
     </div>
 
     <h1
-      class="text-[35px] font-[400] text-[#534B42] lg:hidden font-merriweather"
+      class="text-[35px] px-8 md:px-14 font-[400] text-[#534B42] lg:hidden font-merriweather"
     >
       Inspirations
     </h1>
 
     <p
-      class="md:w-[350px] mt-5 text-[18px] font-[400] text-[#706458E5] lg:hidden font-varta"
+      class="md:w-[350px] px-8 md:pl-14 mt-5 text-[18px] font-[400] text-[#706458E5] lg:hidden font-varta"
     >
       Our experts are keen to stay on top of trends in order to offer you new
       inspirations for your interior and exterior every day. Remember that to
@@ -195,7 +195,7 @@
       you.
     </p>
 
-    <div class="grid grid-cols-2 w-fit mt-10 lg:hidden justify-center">
+    <div class="grid grid-cols-2  px-[12px] md:px-[36px] w-fit mt-10 lg:hidden justify-center">
       <photos
         v-for="object in objects"
         :key="object.id"
@@ -214,7 +214,7 @@
     </div>
     <div class="lg:flex xl:pr-[150px] mt-[40px] justify-between relative">
       <h1
-        class="lg:block hidden text-[45px] w-[360px] text-[#534B42] font-[300] font-merriweather"
+        class="lg:block tracking-wider   hidden text-[45px] w-[360px] text-[#534B42] font-[300] font-merriweather"
       >
         Inspirations
       </h1>
@@ -229,7 +229,7 @@
       </p>
 
       <div class="w-[360px] mt-5 relative">
-        <div class="mb-5 lg:flex absolute lg:right-16 hidden">
+        <div class="mb-5 lg:flex absolute lg:right-16 xl:left-16 hidden">
           <button
             @click="goprev1"
             class="w-[40px] h-[40px] border-2 mr-2 border-[#A06056] rounded-[50%] text-[20px] font-[700] text-[#A06056]"
@@ -244,7 +244,7 @@
           </button>
         </div>
         <p
-          class="md:block absolute lg:right-[90px] top-16 hidden text-[#706458E5] text-[18px] font-[400]"
+          class="md:block absolute lg:right-[90px] xl:left-[90px] top-16 hidden text-[#706458E5] text-[18px] font-[400]"
         >
           {{ currentPage1 + 1 }} / {{ totalSlides1 }}
         </p>
@@ -260,7 +260,7 @@
       id="footer"
     >
       <h2
-        class="text-[34px] text-[#534B42] font-[700] xl:relative xl:w-auto xl:top-0 md:absolute md:w-full md:pr-[75px] md:top-3 md:text-center xl:text-left text-center font-merriweather"
+        class="text-[34px] tracking-wider text-[#534B42] font-[700] xl:relative xl:w-auto xl:top-0 md:absolute md:w-full md:pr-[75px] md:top-3 md:text-center xl:text-left text-center font-merriweather"
       >
         antic
       </h2>
@@ -314,17 +314,17 @@
           us, that means retailing responsibly.</span
         >
         <h4 class="text-[17px] text-[#A06056] font-[700] mt-5 font-karla">
-          Learn more >
+          Learn more  <i class="fa-solid fa-chevron-right"></i>
         </h4>
       </div>
     </div>
     <div
       class="flex text-[32px] justify-center gap-[24px] text-[#706458] mt-10 md:mt-[48px]"
     >
-      <font-awesome-icon :icon="['fab', 'facebook']" />
-      <font-awesome-icon :icon="['fab', 'twitter']" />
-      <font-awesome-icon :icon="['fab', 'linkedin']" />
-      <font-awesome-icon :icon="['fab', 'instagram']" />
+    <i class="fa-brands fa-square-facebook"></i>
+    <i class="fa-brands fa-square-twitter"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-square-instagram"></i>
     </div>
 
     <div
@@ -363,32 +363,32 @@ const scroll = () => {
 const rooms = [
   {
     id: 1,
-    name: "bedroom",
+    name: "Bedroom",
     image: "Background.png"
   },
   {
     id: 2,
-    name: "living room",
+    name: "Living room",
     image: "livingroom.jpg"
   },
   {
     id: 3,
-    name: "bedroom 1",
+    name: "Bedroom 1",
     image: "Background.png"
   },
   {
     id: 4,
-    name: "bedroom 2",
+    name: "Bedroom 2",
     image: "Background.png"
   },
   {
     id: 5,
-    name: "bedroom 3",
+    name: "Bedroom 3",
     image: "Background.png"
   },
   {
     id: 6,
-    name: "bedroom 4",
+    name: "Bedroom 4",
     image: "Background.png"
   },
 ];
@@ -483,7 +483,8 @@ const swiperOptions1 = {
 </script>
 <style scoped>
 #footer h3 {
-  font-size: 23px;
+  font-size: 25px;
+  font-family: 'Varta', sans-serif;
   font-weight: 600;
   color: #534b42;
   margin-bottom: 10px;
@@ -493,9 +494,16 @@ const swiperOptions1 = {
   font-size: 18px;
   font-weight: 400;
   color: #706458;
+  font-family: 'Varta', sans-serif;
 }
 .swiper-slide {
   width: fit-content;
   margin-right: 30px;
+}
+input::placeholder {
+  color: #706458E5;
+  font-size: 18px;
+  font-weight:400;
+  font-family: 'Varta', sans-serif;
 }
 </style>
