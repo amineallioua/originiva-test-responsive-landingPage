@@ -7,7 +7,7 @@
         <p
           class="text-[14px] tracking-wider xl:text-[#A06056] text-white font-[700] mb-[50px] font-varta"
         >
-          HOME DESIGN
+          HOME DESIGN 
         </p>
         <h1
           class="xl:text-[50px] tracking-wide text-[35px] md:text-[50px]  xl:text-[#A06056] mb-8 text-white font-[400] font-merriweather"
@@ -40,7 +40,7 @@
   </section>
 
   <section
-    class="w-full md:pl-14 lg:pl-[60px] px-8 overflow-hidden xl:pl-[150px] py-[48px] md:py-[30px] bg-[#F3EEE8]"
+    class="w-full md:pl-14 lg:pl-[60px] px-8 overflow-hidden xl:pl-[150px] py-[48px] lg:py-[70px] md:py-[30px] bg-[#F3EEE8]"
   >
     <h1
       class="text-[35px] lg:text-[55px] text-[#706458] mb-[20px] lg:mb-[48px] font-merriweather"
@@ -70,7 +70,7 @@
         class="md:ml-[280px] md:hidden mr-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
         @click="goNext"
       >
-        Next <i class="fa-solid fa-chevron-right"></i>
+        Next <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
       </button>
       <p class="text-[#706458E5] text-[18px] font-[400]">
         {{ currentPage + 1  }} / {{ totalSlides }}
@@ -79,7 +79,7 @@
         class="md:ml-[280px] hidden md:block ml-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
         @click="goNext"
       >
-        Next <i class="fa-solid fa-chevron-right"></i>
+        Next <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
       </button>
     </div>
   </section>
@@ -96,14 +96,14 @@
       <p
         class="text-[#A06056] text-[17px] mt-[30px] mb-5 lg:mb-0 font-[700] font-karla"
       >
-        Find out more <i class="fa-solid fa-chevron-right"></i>
+        Find out more  <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
       </p>
     </div>
     <div class="md:grid md:grid-cols-2 gap-7  h-auto md:mt-0 mt-[41px] md:grid-rows-auto">
       <div
-        class="lg:m-auto md:mb-0 mb-[40px] md:p-[1px] md:h-auto lg:p-[1px] max-w-[290px]"
+        class="lg:m-auto md:mb-0 mb-[40px] md:h-[210px]  md:p-[1px]  lg:p-[1px] max-w-[290px]"
       >
-        <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta">
+        <h3 class="text-[25px] font-[600]  mb-[12px] text-[#A06056] font-varta">
           Our Advices
         </h3>
         <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
@@ -113,7 +113,7 @@
         </p>
       </div>
       <div
-        class="lg:m-auto md:mb-0 mb-[40px] md:p-[1px] md:h-[213.5px] lg:p-[1px] max-w-[290px]"
+        class="lg:m-auto md:mb-0 mb-[40px]   md:p-[1px] md:h-[210.5px] lg:p-[1px] max-w-[290px]"
       >
         <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta">
           Click and Collect
@@ -160,7 +160,7 @@
           Stay informed of new trends, but also of our various offers.
         </p>
         <p class="text-[17px] font-[700] text-[#A06056] font-karla">
-          Learn more <i class="fa-solid fa-chevron-right"></i>
+          Learn more <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
         </p>
       </div>
       <div
@@ -313,7 +313,7 @@
           us, that means retailing responsibly.</span
         >
         <h4 class="text-[17px] text-[#A06056] font-[700] mt-5 font-karla">
-          Learn more  <i class="fa-solid fa-chevron-right"></i>
+          Learn more  <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
         </h4>
       </div>
     </div>
@@ -488,6 +488,14 @@ const swiperOptions1 = {
   color: #534b42;
   margin-bottom: 10px;
 }
+
+/* Change color on small devices */
+@media (max-width: 640px) { /* Adjust breakpoint as needed */
+  #footer h3 {
+    color: #121212;
+  }
+}
+
 #footer p {
   margin-bottom: 10px;
   font-size: 18px;

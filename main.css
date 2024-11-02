@@ -1,11 +1,44 @@
-/* src/index.css or src/main.css */
-
-/* Import custom fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-
-/* Tailwind CSS imports */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Load local Varta fonts */
+@font-face {
+    font-family: 'Varta';
+    src: url('@/assets/fonts/Varta/static/Varta-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular weight */
+  }
+  
+  @font-face {
+    font-family: 'Varta';
+    src: url('@/assets/fonts/Varta/static/Varta-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+  }
+  
+  /* Load local Merriweather fonts */
+  @font-face {
+    font-family: 'Merriweather';
+    src: url('@/assets/fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular weight */
+  }
+  
+  @font-face {
+    font-family: 'Merriweather';
+    src: url('@/assets/fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
+    font-weight: 300; /* Light weight */
+  }
+  
+  @font-face {
+    font-family: 'Merriweather';
+    src: url('@/assets/fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+  }
+  
+  /* Load local Karla fonts */
+  @font-face {
+    font-family: 'Karla';
+    src: url('@/assets/fonts/Karla/static/Karla-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight only */
+  }
+  
+  /* Tailwind CSS imports */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  

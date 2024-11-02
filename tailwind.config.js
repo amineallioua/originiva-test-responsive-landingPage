@@ -1,6 +1,5 @@
 // tailwind.config.js
 export default {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"], // Adjust to match your file paths
   theme: {
     extend: {
       fontFamily: {
@@ -8,6 +7,7 @@ export default {
         merriweather: ['Merriweather', 'serif'],
         karla: ['Karla', 'sans-serif'],
       },
+   
     },
   },
   plugins: [],
