@@ -417,7 +417,7 @@ const objects = [
 const onSwiperInit = (swiperInstance) => {
   mySwiper.value = swiperInstance;
   totalSlides.value = swiperInstance.slides.length;
-  loading = true;
+ 
 };
 const onSwiperInit1 = (swiperInstance) => {
   mySwiper1.value = swiperInstance;
@@ -455,6 +455,7 @@ const goprev1 = () => {
 const swiperOptions = {
   loop: true,  // Change this to false for testing
   slidesPerView: "auto",
+  direction: 'horizontal' ,  
   spaceBetween: 30,
   pagination: {
     clickable: true,
@@ -473,6 +474,7 @@ const swiperOptions = {
 
 const swiperOptions1 = {
   spaceBetween: 0,
+  direction: 'horizontal',   
   slidesPerView: "auto",
   loop: true,
   pagination: {
@@ -495,12 +497,7 @@ const swiperOptions1 = {
     color: #121212;
   }
 }
-.swiper-slide {
-  display: inline-block;
-  width: 100%; /* Or the intended width */
-  height: 100%; /* Or the intended height */
-  overflow: hidden;
-}
+
 
 
 #footer p {
