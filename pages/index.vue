@@ -476,7 +476,7 @@ const swiperOptions1 = {
   }
 }
 .swiper-slide {
-  display: inline-block;
+  display: flex;
   width: 100%; /* Or the intended width */
   height: 100%; /* Or the intended height */
   overflow: hidden;
