@@ -2,7 +2,7 @@
   <section class="h-screen relative w-full flex items-center bg-[#F3EEE8]">
     <div class="xl:w-1/2 xl:pl-[150px] w-full h-screen xl:h-[100vh] flex items-center z-20">
       <div
-        class="md:w-[700px]  xl:w-[410px] mx-5 lg:mx-[15%] md:mx-14 mt-[250px] md:mt-[25%] lg:mt-[20%]  xl:m-0 xl:text-left text-center"
+        class="md:w-[700px]  xl:w-[410px] mx-5 lg:mx-[15%] md:mx-14     xl:m-0 xl:text-left text-center"
       >
         <p
           class="text-[14px] tracking-[1px] xl:text-[#A06056] text-white font-[700] mb-[50px] font-varta"
@@ -117,7 +117,7 @@
       What if you took advantage of this rather special period to rethink your interior? You spend more time at home so you might as well feel good there.
     </p>
   </div>
-  <div class="lg:m-auto md:mb-0 mb-[40px]  h-[170px] md:p-[1px] lg:p-[1px] max-w-[290px] align-top">
+  <div class="lg:m-auto md:mb-0 mb-[40px]  md:h-[170px] md:p-[1px] lg:p-[1px] max-w-[290px] align-top">
     <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta leading-tight">
       Click and Collect
     </h3>
