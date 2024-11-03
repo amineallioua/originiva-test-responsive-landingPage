@@ -48,13 +48,32 @@
       Find your room
     </h1>
     <div class="lg:flex w-auto">
-      <p
-        class="text[18px] md:w-[365px] lg:mr-20 lg:m-0 mb-8 lg:mb-10 font-[400] text-[#706458E5] font-varta"
-      >
-        Dining room, bedroom, bathroom or office. Find what you need
-      </p>
- 
+    <p class="text-[18px] md:w-[365px] lg:mr-20 lg:m-0 mb-8 lg:mb-10 font-[400] text-[#706458E5] font-varta">
+      Dining room, bedroom, bathroom or office. Find what you need
+    </p>
+    
+    <!-- Show the placeholder while loading -->
+    <div v-if="loading" class=" flex overflow-hidden lg:w-full">
+      <!-- Placeholder content, like a loading spinner or a message -->
+      <cardloader/>
+      <cardloader/>
+      <cardloader/>
     </div>
+
+    <!-- Show Swiper once loaded -->
+    <swiper
+      v-else
+      :breakpoints="swiperOptions.breakpoints"
+      @swiper="onSwiperInit"
+      @slideChange="onSlideChange"
+      v-bind="swiperOptions"
+      class="lg:w-auto"
+    >
+      <swiper-slide v-for="room in rooms" :key="room.id">
+        <card :name="room.name" :image="room.image" />
+      </swiper-slide>
+    </swiper>
+  </div>
     <div class="flex mt-[28px] md:mt-[48px]">
       <button
         class="md:ml-[280px] md:hidden flex items-center mr-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
@@ -328,7 +347,7 @@ import { ref } from "vue";
 const mySwiper = ref(null);
 const currentPage = ref(0); // Track current slide index
 const totalSlides = ref(0); // Total number of slides
-
+const loading = ref(false);
 const mySwiper1 = ref(null);
 const currentPage1 = ref(0); // Track current slide index
 const totalSlides1 = ref(0); // Total number of slides
@@ -398,6 +417,7 @@ const objects = [
 const onSwiperInit = (swiperInstance) => {
   mySwiper.value = swiperInstance;
   totalSlides.value = swiperInstance.slides.length;
+  loading = true;
 };
 const onSwiperInit1 = (swiperInstance) => {
   mySwiper1.value = swiperInstance;
@@ -476,7 +496,7 @@ const swiperOptions1 = {
   }
 }
 .swiper-slide {
-  display: flex;
+  display: inline-block;
   width: 100%; /* Or the intended width */
   height: 100%; /* Or the intended height */
   overflow: hidden;
