@@ -1,6 +1,6 @@
 <template>
   <section class="h-screen relative w-full flex items-center bg-[#F3EEE8]">
-    <div class="xl:w-1/2 xl:pl-[150px] w-full h-screen xl:h-[50vh] z-20">
+    <div class="xl:w-1/2 xl:pl-[150px] w-full h-screen xl:h-[100vh] flex items-center z-20">
       <div
         class="md:w-[700px]  xl:w-[410px] mx-5 lg:mx-[15%] md:mx-14 mt-[250px] md:mt-[25%] lg:mt-[20%]  xl:m-0 xl:text-left text-center"
       >
@@ -10,18 +10,18 @@
           HOME DESIGN 
         </p>
         <h1
-          class="xl:text-[50px] tracking-wide text-[35px] md:text-[50px]  xl:text-[#A06056] mb-8 text-white font-[400] font-merriweather"
+          class="xl:text-[50px] inline-block leading-[60px]  tracking-wide text-[35px] md:text-[50px]  xl:text-[#A06056] mb-8 text-white font-[400] font-merriweather"
         >
           Elegance for Interiors & Exteriors
         </h1>
         <p
-          class="text-[18px]  xl:text-[22px] font-[400] xl:text-[#706458E5] text-white mb-8 font-varta"
+          class="text-[18px] leading-none xl:text-[22px] font-[400] xl:text-[#706458E5] text-white mb-8 font-varta"
         >
           We provide everyone with modern, trendy, quality furniture
         </p>
         <button
           @click="scroll"
-          class="border-2 text-[20px] font-[700] text-white xl:text-[#A06056] xl:border-[#A06056] border-white rounded-[50%] mt-5 h-[50px] w-[50px]"
+          class="border-2 text-[20px] font-[700] text-white xl:text-[#A06056] xl:border-[#A06056] border-white rounded-[50%]  h-[50px] w-[50px]"
         >
           <i class="fa-solid fa-chevron-down"></i>
         </button>
@@ -53,17 +53,7 @@
       >
         Dining room, bedroom, bathroom or office. Find what you need
       </p>
-      <swiper
-        :breakpoints="swiperOptions.breakpoints"
-        @swiper="onSwiperInit"
-        @slideChange="onSlideChange"
-        v-bind="swiperOptions"
-        class="lg:w-auto"
-      >
-        <swiper-slide v-for="room in rooms" :key="room.id">
-          <card :name="room.name" , :image="room.image" />
-        </swiper-slide>
-      </swiper>
+ 
     </div>
     <div class="flex mt-[28px] md:mt-[48px]">
       <button

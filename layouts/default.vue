@@ -1,7 +1,7 @@
 <template>
     <div>
       <div
-        class="w-full pt-[70px] h-20 absolute flex justify-between items-center z-50"
+        class="w-full pt-[65px] h-20 absolute flex justify-between items-center z-50"
       >
         <div class="flex items-center lg:mt-2 md:pl-16 pl-8 xl:pl-[150px]">
           <span
