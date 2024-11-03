@@ -485,6 +485,13 @@ const swiperOptions1 = {
     color: #121212;
   }
 }
+.swiper-slide {
+  display: inline-block;
+  width: 100%; /* Or the intended width */
+  height: 100%; /* Or the intended height */
+  overflow: hidden;
+}
+
 
 #footer p {
   margin-bottom: 10px;
