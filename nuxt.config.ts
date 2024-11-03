@@ -1,18 +1,5 @@
 
-// nuxt.config.ts
-// Add this at the top of the file
-declare module '@nuxt/schema' {
-  interface NuxtConfig {
-    googleFonts?: {
-      families: {
-        Varta?: number[];
-        Merriweather?: number[];
-        Karla?: number[];
-      };
-      display?: string;
-    }
-  }
-}
+
 
 
 

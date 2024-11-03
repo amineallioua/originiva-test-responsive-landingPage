@@ -85,7 +85,7 @@
   </section>
 
   <section
-    class="w-full md:px-14 px-8 xl:px-[150px] overflow-hidden lg:px-[60px] pt-[48px] md:pt-[65px] pb-[50px] bg-[#F3EEE8] lg:flex"
+    class="w-full md:px-14 px-8 xl:px-[150px] items-end overflow-hidden lg:px-[60px] pt-[48px] md:pt-[65px] pb-[50px] bg-[#F3EEE8] lg:flex"
   >
     <div class="lg:w-1/2 w-auto lg:pr-[150px]">
       <h1
@@ -99,7 +99,7 @@
         Find out more  <span class="text-[12px]  " >  <i class="fa-solid fa-chevron-right"></i></span>
       </p>
     </div>
-    <div class="md:grid md:grid-cols-2 gap-7  h-auto md:mt-0 mt-[41px] md:grid-rows-auto">
+    <div class="md:grid md:grid-cols-2 max-gap-7  h-[390px] md:mt-0 mt-[41px] md:grid-rows-auto">
       <div
         class="lg:m-auto md:mb-0 mb-[40px] md:h-[210px]  md:p-[1px]  lg:p-[1px] max-w-[290px]"
       >

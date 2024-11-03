@@ -21,7 +21,7 @@
         <button
           @click="togglesidebar"
           :class="[
-            'lg:hidden  absolute text-[30px] font-[700] text-white     rounded-[50%]  h-[50px] w-[50px] right-10 transition-all duration-500 ease-in-out ',
+            'lg:hidden  absolute text-[30px] font-[700] text-white     rounded-[50%]  h-[50px] w-[50px] right-[32px] p-3 transition-all duration-500 ease-in-out ',
             isopen ? 'hidden' : 'block'
           ]"
         >
@@ -48,7 +48,7 @@
       >
         <button
           @click="togglesidebar"
-          class="right-10 top-12 absolute text-[30px] font-[700] text-white rounded-[50%] h-[50px] w-[50px]"
+          class="right-[32px] p-3 top-12 absolute text-[30px] font-[700] text-white rounded-[50%] h-[50px] w-[50px]"
         >
         <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.66">
