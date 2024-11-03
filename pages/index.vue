@@ -57,7 +57,7 @@
       <!-- Placeholder content, like a loading spinner or a message -->
       <cardloader/>
       <cardloader/>
-      <cardloader/>
+     
     </div>
 
     <!-- Show Swiper once loaded -->
@@ -195,20 +195,31 @@
 
     <div class="grid grid-cols-2  px-[12px] md:px-[36px] w-fit mt-10 lg:hidden justify-center">
       <photos
+      v-if="loading1"
         v-for="object in objects"
         :key="object.id"
         :name="object.name"
         :image="object.image"
       />
+      <photoloader
+      
+      v-for="object in objects"
+      v-else
+      
+      />
     </div>
     <div
       class="w-full xl:mt-5 lg:mt-[180px] my-5 lg:block hidden overflow-hidden"
     >
-      <swiper @swiper="onSwiperInit1" @slideChange="onSlideChange1" class="w-full" v-bind="swiperOptions1">
+      <swiper v-if="loading1" @swiper="onSwiperInit1" @slideChange="onSlideChange1" class="w-full" v-bind="swiperOptions1">
         <swiper-slide v-for="object in objects" :key="object.id">
           <photos :name="object.name" :image="object.image" />
         </swiper-slide>
       </swiper>
+      <div class=" flex gap-3 " v-else >
+        <photoloader/>
+        <photoloader/>
+      </div>
     </div>
     <div class="lg:flex xl:pr-[150px] mt-[40px] justify-between relative">
       <h1
@@ -342,12 +353,13 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
-import { ref } from "vue";
+import { ref , onMounted } from "vue";
 
 const mySwiper = ref(null);
 const currentPage = ref(0); // Track current slide index
 const totalSlides = ref(0); // Total number of slides
-const loading = ref(false);
+const loading = ref(true);
+const loading1 = ref(false);
 const mySwiper1 = ref(null);
 const currentPage1 = ref(0); // Track current slide index
 const totalSlides1 = ref(0); // Total number of slides
@@ -417,8 +429,15 @@ const objects = [
 const onSwiperInit = (swiperInstance) => {
   mySwiper.value = swiperInstance;
   totalSlides.value = swiperInstance.slides.length;
- 
+
+
 };
+onMounted(() => {
+  setTimeout(() => {
+  loading.value = false
+  loading1.value = true
+}, 500);
+})
 const onSwiperInit1 = (swiperInstance) => {
   mySwiper1.value = swiperInstance;
   totalSlides1.value = swiperInstance.slides.length;
