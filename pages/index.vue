@@ -99,7 +99,7 @@
         Find out more  <span class="text-[12px]  " >  <i class="fa-solid fa-chevron-right"></i></span>
       </p>
     </div>
-    <div class="md:grid md:grid-cols-2 max-gap-7  h-[390px] md:mt-0 mt-[41px] md:grid-rows-auto">
+    <div class="md:grid md:grid-cols-2 gap-7  h-[390px] md:mt-0 mt-[41px] md:grid-rows-auto">
       <div
         class="lg:m-auto md:mb-0 mb-[40px] md:h-[210px]  md:p-[1px]  lg:p-[1px] max-w-[290px]"
       >
