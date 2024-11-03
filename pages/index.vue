@@ -72,8 +72,8 @@
       >
         Next <span class="text-[12px] ml-2" >  <i class="fa-solid fa-chevron-right"></i></span>
       </button>
-      <p class="text-[#706458E5] text-[18px] font-[400]">
-        {{ currentPage + 1  }} / {{ totalSlides }}
+      <p class="text-[#706458] font-varta text-[18px] opacity-50 font-[400]">
+        0{{ currentPage + 1  }} / 0{{ totalSlides }}
       </p>
       <button
         class="md:ml-[280px] hidden  md:flex items-center ml-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
@@ -99,51 +99,41 @@
         Find out more  <span class="text-[12px]  " >  <i class="fa-solid fa-chevron-right"></i></span>
       </p>
     </div>
-    <div class="md:grid md:grid-cols-2 gap-7  h-[390px] md:mt-0 mt-[41px] md:grid-rows-auto">
-      <div
-        class="lg:m-auto md:mb-0 mb-[40px] md:h-[210px]  md:p-[1px]  lg:p-[1px] max-w-[290px]"
-      >
-        <h3 class="text-[25px] font-[600]  mb-[12px] text-[#A06056] font-varta">
-          Our Advices
-        </h3>
-        <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
-          What if you took advantage of this rather special period to rethink
-          your interior? You spend more time at home so you might as well feel
-          good there.
-        </p>
-      </div>
-      <div
-        class="lg:m-auto md:mb-0 mb-[40px]   md:p-[1px] md:h-[210.5px] lg:p-[1px] max-w-[290px]"
-      >
-        <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta">
-          Click and Collect
-        </h3>
-        <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
-          Adapted and contactless. Free from € 200 of purchases in stores
-          offering the service.
-        </p>
-      </div>
-      <div
-        class="lg:m-auto md:mb-0 mb-[40px] md:p-[1px] h-auto lg:p-[1px] max-w-[290px]"
-      >
-        <h3 class="text-[25px] font-[600] mb-[12px] font-varta text-[#A06056]">
-          Conception Service
-        </h3>
-        <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
-          Personalized service with an expert advisor for your interior and
-          exterior decoration or layout projects.
-        </p>
-      </div>
-      <div class="lg:m-auto md:mb-0 md:p-[1px] h-auto lg:p-[1px] max-w-[290px]">
-        <h3 class="text-[25px] mb-[12px] font-[600] text-[#A06056] font-varta">
-          Installation Service
-        </h3>
-        <p class="text-[18px] font-[400] text-[#706458E5] font-varta">
-          Our furniture packaged in flat packs are designed for easy assembly.
-          But you can call on our partner.
-        </p>
-      </div>
-    </div>
+    <div class="md:grid md:grid-cols-2 md:gap-7 md:h-auto md:mt-0 mt-[41px]">
+  <div class="lg:m-auto md:mb-0 mb-[40px] md:h-auto h-auto md:p-[1px] lg:p-[1px] max-w-[290px] align-top">
+    <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta leading-tight">
+      Our Advices
+    </h3>
+    <p class="text-[18px] font-[400] text-[#706458E5] font-varta leading-snug">
+      What if you took advantage of this rather special period to rethink your interior? You spend more time at home so you might as well feel good there.
+    </p>
+  </div>
+  <div class="lg:m-auto md:mb-0 mb-[40px]  h-[170px] md:p-[1px] lg:p-[1px] max-w-[290px] align-top">
+    <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta leading-tight">
+      Click and Collect
+    </h3>
+    <p class="text-[18px] font-[400] text-[#706458E5] font-varta leading-snug">
+      Adapted and contactless. Free from € 200 of purchases in stores offering the service.
+    </p>
+  </div>
+  <div class="lg:m-auto md:mb-0 mb-[40px] md:p-[1px] h-auto lg:p-[1px] max-w-[290px] align-top">
+    <h3 class="text-[25px] font-[600] mb-[12px] text-[#A06056] font-varta leading-tight">
+      Conception Service
+    </h3>
+    <p class="text-[18px] font-[400] text-[#706458E5] font-varta leading-snug">
+      Personalized service with an expert advisor for your interior and exterior decoration or layout projects.
+    </p>
+  </div>
+  <div class="lg:m-auto md:mb-0 md:p-[1px] h-auto lg:p-[1px] max-w-[290px] align-top">
+    <h3 class="text-[25px] mb-[12px] font-[600] text-[#A06056] font-varta leading-tight">
+      Installation Service
+    </h3>
+    <p class="text-[18px] font-[400] text-[#706458E5] font-varta leading-snug">
+      Our furniture packaged in flat packs are designed for easy assembly. But you can call on our partner.
+    </p>
+  </div>
+</div>
+
   </section>
 
   <section
@@ -228,7 +218,7 @@
       </p>
 
       <div class="w-[360px] mt-5 relative">
-        <div class="mb-5 lg:flex absolute lg:right-16 xl:left-16 hidden">
+        <div class="mb-5 lg:flex absolute w-full lg:left-16  hidden">
           <button
             @click="goprev1"
             class="w-[40px] h-[40px] border-2 mr-2 border-[#A06056] rounded-[50%] text-[20px] font-[700] text-[#A06056]"
@@ -243,9 +233,9 @@
           </button>
         </div>
         <p
-          class="md:block absolute lg:right-[90px] xl:left-[90px] top-16 hidden text-[#706458E5] text-[18px] font-[400]"
+          class="md:block w-full absolute lg:left-16  top-16 hidden text-[#706458] opacity-50 text-[18px] font-[400]"
         >
-          {{ currentPage1 + 1 }} / {{ totalSlides1 }}
+          0{{ currentPage1 + 1 }} / 0{{ totalSlides1 }}
         </p>
       </div>
     </div>
