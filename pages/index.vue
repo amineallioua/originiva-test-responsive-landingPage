@@ -67,19 +67,19 @@
     </div>
     <div class="flex mt-[28px] md:mt-[48px]">
       <button
-        class="md:ml-[280px] md:hidden mr-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
+        class="md:ml-[280px] md:hidden flex items-center mr-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
         @click="goNext"
       >
-        Next <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
+        Next <span class="text-[12px] ml-2" >  <i class="fa-solid fa-chevron-right"></i></span>
       </button>
       <p class="text-[#706458E5] text-[18px] font-[400]">
         {{ currentPage + 1  }} / {{ totalSlides }}
       </p>
       <button
-        class="md:ml-[280px] hidden md:block ml-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
+        class="md:ml-[280px] hidden  md:flex items-center ml-[200px] text-[#A06056] text-[20px] font-[700] font-karla"
         @click="goNext"
       >
-        Next <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
+        Next <span class="text-[12px] ml-2  items-center " >  <i class="fa-solid fa-chevron-right"></i></span>
       </button>
     </div>
   </section>
@@ -94,9 +94,9 @@
         We stay by your side to design your projects
       </h1>
       <p
-        class="text-[#A06056] text-[17px] mt-[30px] mb-5 lg:mb-0 font-[700] font-karla"
+        class="text-[#A06056]  text-[17px] mt-[30px] mb-5 lg:mb-0 font-[700] font-karla"
       >
-        Find out more  <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
+        Find out more  <span class="text-[12px]  " >  <i class="fa-solid fa-chevron-right"></i></span>
       </p>
     </div>
     <div class="md:grid md:grid-cols-2 gap-7  h-auto md:mt-0 mt-[41px] md:grid-rows-auto">
@@ -160,7 +160,7 @@
           Stay informed of new trends, but also of our various offers.
         </p>
         <p class="text-[17px] font-[700] text-[#A06056] font-karla">
-          Learn more <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
+          Learn more <span class="text-[12px]" >  <i class="fa-solid fa-chevron-right"></i></span>
         </p>
       </div>
       <div
@@ -313,7 +313,7 @@
           us, that means retailing responsibly.</span
         >
         <h4 class="text-[17px] text-[#A06056] font-[700] mt-5 font-karla">
-          Learn more  <span class="text-[14px]" >  <i class="fa-solid fa-chevron-right"></i></span>
+          Learn more  <span class="text-[12px]" >  <i class="fa-solid fa-chevron-right"></i></span>
         </h4>
       </div>
     </div>
