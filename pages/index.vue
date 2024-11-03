@@ -5,7 +5,7 @@
         class="md:w-[700px]  xl:w-[410px] mx-5 lg:mx-[15%] md:mx-14 mt-[250px] md:mt-[25%] lg:mt-[20%]  xl:m-0 xl:text-left text-center"
       >
         <p
-          class="text-[14px] tracking-wider xl:text-[#A06056] text-white font-[700] mb-[50px] font-varta"
+          class="text-[14px] tracking-[1px] xl:text-[#A06056] text-white font-[700] mb-[50px] font-varta"
         >
           HOME DESIGN 
         </p>
@@ -259,7 +259,7 @@
       id="footer"
     >
       <h2
-        class="text-[34px] tracking-wider text-[#534B42] font-[700] xl:relative xl:w-auto xl:top-0 md:absolute md:w-full md:pr-[75px] md:top-3 md:text-center xl:text-left text-center font-merriweather"
+        class="text-[34px] tracking-[1px] text-[#534B42] font-[700] xl:relative xl:w-auto xl:top-0 md:absolute md:w-full md:pr-[75px] md:top-3 md:text-center xl:text-left text-center font-merriweather"
       >
         antic
       </h2>

@@ -5,7 +5,7 @@
       >
         <div class="flex items-center lg:mt-2 md:pl-16 pl-8 xl:pl-[150px]">
           <span
-            class="text-[34px] tracking-wider p-0 text-white lg:text-[#A06056] font-bold font-merriweather"
+            class="text-[34px] tracking-[2px] p-0 text-white lg:text-[#A06056] font-bold font-merriweather"
             >antic
           </span>
           <ul
