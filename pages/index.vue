@@ -85,11 +85,11 @@
   </section>
 
   <section
-    class="w-full md:px-14 px-8 xl:px-[150px] items-end overflow-hidden lg:px-[60px] pt-[48px] md:pt-[65px] pb-[50px] bg-[#F3EEE8] lg:flex"
+    class="w-full md:pl-14 px-8 xl:pl-[150px] gap-[48px] items-start overflow-hidden lg:pl-[60px] pt-[48px] md:pt-[65px] pb-[50px] bg-[#F3EEE8] lg:flex"
   >
-    <div class="lg:w-1/2 w-auto lg:pr-[150px]">
+    <div class="lg:w-1/2 w-auto ">
       <h1
-        class="text-[35px] max-w-[458px] lg:text-[55px] text-[#706458] font-[400] font-merriweather"
+        class="text-[35px] max-w-[458px] inline-block leading-none m-0 p-0  lg:text-[55px] text-[#706458] font-[400] font-merriweather"
       >
         We stay by your side to design your projects
       </h1>
